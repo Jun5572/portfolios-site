@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -597,28 +597,39 @@ video {
   height: 4rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .items-center {
   align-items: center;
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-sky-500 {
+.bg-background-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+  background-color: rgb(88 165 173 / var(--tw-bg-opacity));
+}
+
+.bg-background-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 202 212 / var(--tw-bg-opacity));
 }
 
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-32 {
@@ -635,3 +646,11 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+/* グローバルナビのアクティブスタイル */
+
+a.active {
+  background-color: #ffffff;
+  color: #6DCAD4;
+  transition: all 00ms ease-in;
+};
