@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind cocmponents;
 @tailwind utilities;
+
+/* グローバルナビのアクティブスタイル */
+a.active {
+  background-color: #ffffff;
+  color: #6DCAD4;
+  transition: all 100ms ease-in;
+};
