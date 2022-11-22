@@ -1,8 +1,8 @@
 import type { RouteObject } from 'react-router-dom';
-import { Layout } from 'src/components/Layout/Layout';
-import { NotFound } from 'src/pages/Errors/404';
+import { Layout } from 'src/components/Layout';
+import { Error404Page } from 'src/pages/Errors/Error404Page';
 import { Home } from 'src/pages/Home';
-import { Home2 } from 'src/pages/Home2';
+import { Transition } from 'src/pages/ReactTransitionGroup';
 
 export const routes: RouteObject[] = [
   {
@@ -15,12 +15,12 @@ export const routes: RouteObject[] = [
       },
       {
         path: "/react-router-transition",
-        element: <Home2 />
+        element: <Transition />
       },
     ],
   },
   {
     path: "*",
-    element: <NotFound />
+    element: <Error404Page />
   }
 ];
